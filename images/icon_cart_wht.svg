@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30">
+  <g id="グループ_9540" data-name="グループ 9540" transform="translate(-1365 -26.059)">
+    <rect id="長方形_4950" data-name="長方形 4950" width="32" height="30" transform="translate(1365 26.059)" fill="#fff" opacity="0.004"/>
+    <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(1368.218 29.198)">
+      <path id="パス_1" data-name="パス 1" d="M14.694,31.347A1.347,1.347,0,1,1,13.347,30,1.347,1.347,0,0,1,14.694,31.347Z" transform="translate(-3.74 -10.186)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="パス_2" data-name="パス 2" d="M31.194,31.347A1.347,1.347,0,1,1,29.847,30,1.347,1.347,0,0,1,31.194,31.347Z" transform="translate(-10.38 -10.186)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="パス_3" data-name="パス 3" d="M1.5,1.5h4L8.183,13.039a1.956,1.956,0,0,0,2,1.387h9.724a1.956,1.956,0,0,0,2-1.387l1.6-7.23H6.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

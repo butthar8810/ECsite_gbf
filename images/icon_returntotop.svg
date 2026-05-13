@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+  <g id="グループ_12658" data-name="グループ 12658" transform="translate(-308 -524)">
+    <g id="グループ_12441" data-name="グループ 12441" opacity="0.9">
+      <g id="楕円形_365" data-name="楕円形 365" transform="translate(308 524)" fill="#fff" stroke="#e5e5e5" stroke-width="2">
+        <circle cx="29" cy="29" r="29" stroke="none"/>
+        <circle cx="29" cy="29" r="28" fill="none"/>
+      </g>
+      <path id="Icon_awesome-arrow-up" data-name="Icon awesome-arrow-up" d="M1.513,12.07l-.847-.847a.912.912,0,0,1,0-1.293L8.077,2.515a.912.912,0,0,1,1.293,0l7.411,7.411a.912.912,0,0,1,0,1.293l-.847.847a.916.916,0,0,1-1.308-.015L10.251,7.459V18.42a.913.913,0,0,1-.915.915H8.115A.913.913,0,0,1,7.2,18.42V7.459l-4.379,4.6a.91.91,0,0,1-1.308.015Z" transform="translate(328.483 542.709)" fill="#1a1311"/>
+    </g>
+  </g>
+</svg>
