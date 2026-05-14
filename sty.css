@@ -56,7 +56,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.header-link-list a{
+.header-link-list .header-link-btn{
     color: #ffffff;
     text-decoration: none;
     transition: .5s;
@@ -68,13 +68,13 @@ header{
     align-items: center;
 
 }
-.header-link-list a:hover{
+.header-link-list .header-link-btn:hover{
     color: #9c9999;
 }
-.header-link-list a img{
+.header-link-list .header-link-btn img{
     width: 30px;
 }
-.header-link-list a span{
+.header-link-list .header-link-btn span{
     font-size: 10px;
 
 }
@@ -156,7 +156,7 @@ header{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 45vw;
+    width: clamp(0px, 45vw, 600px);
     height: 100vh;
     background-color: #fff;
     transition: right 0.3s ease-in-out;
@@ -165,7 +165,6 @@ header{
     overflow-y: auto;
     overflow-x: hidden;
 }
-
 .slide-menu.active {
     right: 0;
 }
@@ -184,30 +183,116 @@ header{
     opacity: 0.5;
 }
 
-.slide-menu-list {
-    list-style: none;
-    padding: 80px 0 0 0;
-    margin: 0;
+.slide-menu-form{
+    width: 100%;
+    padding: 15px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide-menu-list li {
-    margin: 0;
-    padding: 0;
+.slide-menu-title{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide-menu-list a {
-    display: block;
-    padding: 15px 30px;
-    color: #1a1311;
+.slide-menu-title img{
+    width: clamp(76.6px, 30%, 116.6px);
+}
+.slide-menu-title h3{
+    font-size: clamp(10px, 1.4vw, 16px);
+    margin: 3px 0;
+    margin-top: 2%;
+}
+.slide-menu-title p{
+    font-size: clamp(8px, 1.2vw, 12px);
+}
+.slide-menu-login{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: clamp(31.5px, 4.5vw, 48px);
+    gap: 15px;
+}
+.slide-menu-login a{
+    font-size:  clamp(8px, 1.2vw, 12px);
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    border-radius: clamp(15.25px, 4.5vw, 24px);
 }
-.slide-menu-list a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.slide-menu-login .login{
+    color: #fff;
+    background-color: #1a1311;
+}
+.slide-menu-login .new{
+    color: #1a1311;
+    border: 1px solid #1a1311;
+}
+.header-link-list a:hover{
+    color: #9c9999;
 }
 
+.slide-menu-list{
+    width: 100%;
+    margin-top: 3vw;
+}
+.slide-menu-list h3{
+    font-size: clamp(8px, 1.2vw, 12px);
+    font-weight: 400;
+    line-height: 3vw;
+    width: 100%;
+}
+.slide-menu-list .line{
+    color: #e5e5e5;
+    width: 100%;
+}
+.slide-menu-list .menu-list{
+    list-style: none;
+}
+.slide-menu-list .menu-list li{
+    width: 100%;
+    height: clamp(32px, 5vw, 50px);
+    padding-left: 20px;
+    border-bottom: 1px solid #efefef;
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slide-menu-list .menu-list li::after{
+    content: "\f105";
+    font: var(--fa-font-solid);
+    font-family: ;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slide-menu-list .menu-list li a{
+    font-size:  clamp(8px, 1.2vw, 12px);
+    font-weight: 300;
+    color: #1a1311;
+    line-height: 30px;
+    text-decoration: none;
+    width: 100%;
+
+    position: relative;
+}
+.slide-menu-list li:hover a{
+    color: #9c9999;
+}
 /*************************************************************/
 /* sub-header
 /*************************************************************/
