@@ -4,18 +4,17 @@
     margin: 0;
     font-family: "YakuHanJPs";
 }
-
-.dummy-space{
+.dummy-header{
     width: 100%;
     height: clamp(77.6833px, 9.5vw, 118.5px);
 }
-
 /*************************************************************/
 /* header
 /*************************************************************/
 header{
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 /*************************************************************/
@@ -170,6 +169,7 @@ header{
 }
 .slide-menu-mask{
     display: none;
+    z-index: -1000;
     transition: all 0.3s ease-in-out;
 }
 .slide-menu-mask.active{
@@ -181,6 +181,7 @@ header{
     left: 0;
     position: fixed;
     opacity: 0.5;
+    z-index: -1;
 }
 
 .slide-menu-form{
@@ -274,7 +275,6 @@ header{
 .slide-menu-list .menu-list li::after{
     content: "\f105";
     font: var(--fa-font-solid);
-    font-family: ;
     position: absolute;
     top: 50%;
     right: 0;
@@ -457,6 +457,7 @@ header{
 
 .drop-menu-mask{
     display: none;
+    z-index: -1000;
     transition: all 0.3s ease-in-out;
 }
 .drop-menu-mask.active{
@@ -468,25 +469,5 @@ header{
     left: 0;
     position: fixed;
     opacity: 0.5;
-    z-index: -10;
-}
-
-
-/*************************************************************/
-/* main
-/*************************************************************/
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.main .main-form{
-    width: 100%;
-    position: relative;
-}
-.main-image{
-    width: 100%;
-    max-width: 1440px;
-    z-index: -100;
+    z-index: -1;
 }

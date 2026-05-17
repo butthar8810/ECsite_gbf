@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sty.css">
+    
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="js/hamburger.js"></script>
-    <title>サイストア(笑)</title>
-</head>
-<body>
+
     <header>
         <div class="main-header">
             <div class="main-header-inner">
-                <a href="#"><img src="images/logo_shopper_v2.svg" alt=""></a>
+                <a href="./"><img src="images/logo_shopper_v2.svg" alt=""></a>
                 <div class="header-link-list">
                     <a class="header-link-btn" href="#">
                         <img src="images/icon_search_wht.svg" alt="">
                         <span>詳細検索</span>
                     </a>
-                    <a class="header-link-btn" href="#">
+                    <a class="header-link-btn" href="login.php">
                         <img src="images/icon_account_wht.svg" alt="">
                         <span>マイページ</span>
                     </a>
@@ -44,8 +37,8 @@
                                 <h3>公式ストアを楽しもう！</h3>
                                 <p>商品購入やマイページ機能をご利用いただくには会員登録・ログインが必要です。</p>
                                 <div class="slide-menu-login">
-                                    <a class="login" href="#">ログイン</a>
-                                    <a class="new" href="#">新規会員登録</a>
+                                    <a class="login" href="login.php">ログイン</a>
+                                    <a class="new" href="signup.php">新規会員登録</a>
                                 </div>
                             </div>
                             <div class="slide-menu-list">
@@ -119,17 +112,10 @@
                     </ul>
                 </div>
             </nav>
-
             <a href="#">チケット情報</a>
             <a href="#">イベント一覧</a>
             <a href="#">トピックス一覧</a>   
         </div>
     </header>
-    <div class="dummy-space"></div>
-    <div class="main">
-        <img class="main-image" src="images/mv_gbf_pc.webp" alt="">
-
-    </div>
-    <footer></footer>
-</body>
-</html>
+    <div class="dummy-header"></div>
+    <script src="js/hamburger.js"></script>

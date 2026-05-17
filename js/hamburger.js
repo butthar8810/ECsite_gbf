@@ -4,18 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const slideMenu = document.querySelector('.slide-menu');
     const slideMenuMask = document.querySelector('.slide-menu-mask');
 
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        slideMenu.classList.toggle('active');
-        slideMenuMask.classList.toggle('active');
-    });
-    
-    
     const menuTub_t = document.querySelector('.menu-tub-title');
     const subMenu_t = document.querySelector('.sub-menu-title');
     const menuTub_c = document.querySelector('.menu-tub-categor');
     const subMenu_c = document.querySelector('.sub-menu-categor');
     const dropMenuMask = document.querySelector('.drop-menu-mask');
+
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        slideMenu.classList.toggle('active');
+        slideMenuMask.classList.toggle('active');
+    });
 
     menuTub_t.addEventListener("mouseover", function() {
         menuTub_c.classList.remove('active');
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         dropMenuMask.classList.add('active');
     });
 
-
     // メニュー外クリックで閉じる
     document.addEventListener('click', function(e) {
         // hamburger, slideMenu以外の要素をクリックしたら
@@ -44,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
             slideMenuMask.classList.remove('active');
         }
     });
-
 
     document.addEventListener('mouseover', function(e) {
         // menuTub, subMenu以外の要素にマウスオーバーしたら
@@ -58,8 +55,5 @@ document.addEventListener('DOMContentLoaded', function() {
             subMenu_c.classList.remove('active');
             dropMenuMask.classList.remove('active');
         }
-    
     });
-
-    
 });
