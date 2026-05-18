@@ -1,26 +1,33 @@
     
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/ECsite_gbf/css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <header>
         <div class="main-header">
             <div class="main-header-inner">
-                <a href="./"><img src="images/logo_shopper_v2.svg" alt=""></a>
+                <a href="/ECsite_gbf/"><img class="main-header-logo-image" src="/ECsite_gbf/images/logo_shopper_v2.svg" alt=""></a>
                 <div class="header-link-list">
                     <a class="header-link-btn" href="#">
-                        <img src="images/icon_search_wht.svg" alt="">
+                        <img src="/ECsite_gbf/images/icon_search_wht.svg" alt="">
                         <span>詳細検索</span>
                     </a>
-                    <a class="header-link-btn" href="login.php">
-                        <img src="images/icon_account_wht.svg" alt="">
-                        <span>マイページ</span>
-                    </a>
+                    <?php if (isset($_SESSION['id'])) : ?>
+                        <a class="header-link-btn" href="/ECsite_gbf/">
+                            <img src="/ECsite_gbf/images/icon_account_wht.svg" alt="">
+                            <span>マイページ</span>
+                        </a>
+                    <?php else: ?>
+                        <a class="header-link-btn" href="/ECsite_gbf/auth/login.php">
+                            <img src="/ECsite_gbf/images/icon_account_wht.svg" alt="">
+                            <span>ログイン</span>
+                        </a>
+                    <?php endif; ?>
                     <a class="header-link-btn" href="#">
-                        <img src="images/icon_favorite_wht.svg" alt="">
+                        <img src="/ECsite_gbf/images/icon_favorite_wht.svg" alt="">
                         <span>お気に入り</span>
                     </a>
                     <a class="header-link-btn" href="#">
-                        <img src="images/icon_cart_wht.svg" alt="">
+                        <img src="/ECsite_gbf/images/icon_cart_wht.svg" alt="">
                         <span>カート</span>
                     </a>
                     <button class="hamburger-menu" aria-label="メニューを開く">
@@ -33,13 +40,24 @@
                     <nav class="slide-menu">
                         <div class="slide-menu-form">
                             <div class="slide-menu-title">
-                                <img src="images/cygames.png" alt="">
+                                <img src="/ECsite_gbf/images/cygames.png" alt="">
                                 <h3>公式ストアを楽しもう！</h3>
-                                <p>商品購入やマイページ機能をご利用いただくには会員登録・ログインが必要です。</p>
-                                <div class="slide-menu-login">
-                                    <a class="login" href="login.php">ログイン</a>
-                                    <a class="new" href="signup.php">新規会員登録</a>
-                                </div>
+                                <?php if (isset($_SESSION['id'])) : ?>
+                                    <div class="slide-menu-mypage">
+                                        <p class="username-text"><?php echo $_SESSION['username'] ?><span>様</span></p>
+                                        <div class="link-list">
+                                            <a class="mypage" href="#"><img src="/ECsite_gbf/images/icon_account_blk.svg" alt="">マイページ</a>
+                                            <a class="favorite" href="#"><img src="/ECsite_gbf/images/icon_favorite_blk.svg" alt="">お気に入り</a>
+                                            <a class="logout" href="/ECsite_gbf/auth/logout.php"><img src="/ECsite_gbf/images/icon_logout_menu_blk.svg" alt="">ログアウト</a>
+                                        </div>
+                                    </div>
+                                <?php else: ?>
+                                    <p>商品購入やマイページ機能をご利用いただくには会員登録・ログインが必要です。</p>
+                                    <div class="slide-menu-login">
+                                        <a class="login" href="/ECsite_gbf/auth/login.php">ログイン</a>
+                                        <a class="new" href="/ECsite_gbf/auth/signup.php">新規会員登録</a>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                             <div class="slide-menu-list">
                                 <h3>商品を探す</h3>
@@ -51,6 +69,20 @@
                                     <li><a href="#">イベント一覧</a></li>
                                     <li><a href="#">トピックス一覧</a> </li>
                                 </ul>
+                            </div>
+                            <div class="slide-menu-title-list">
+                                <h3>タイトル別特集ページ</h3>
+                                <hr class="line">
+                                <div class="menu-title-list">
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-granblue.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-shadowverse_v3.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-princess.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-uma.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-zombieland.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-bahamut.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-comic.webp" alt=""></a>
+                                    <a href="#"><img src="/ECsite_gbf/images/ip-pictures_v2.webp" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -66,14 +98,14 @@
             <div class="menu-tub-title angle">タイトルから探す <i class="fa-solid fa-angle-down"></i></div>
             <nav class="sub-menu-title">
                 <div class="title-list">
-                    <a href="#"><img src="images/ip-granblue.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-shadowverse_v3.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-princess.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-uma.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-zombieland.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-bahamut.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-comic.webp" alt=""></a>
-                    <a href="#"><img src="images/ip-pictures_v2.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-granblue.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-shadowverse_v3.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-princess.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-uma.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-zombieland.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-bahamut.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-comic.webp" alt=""></a>
+                    <a href="#"><img src="/ECsite_gbf/images/ip-pictures_v2.webp" alt=""></a>
                 </div>
             </nav>
             <div class="menu-tub-categor angle">カテゴリから探す <i class="fa-solid fa-angle-down"></i></div>
@@ -118,4 +150,4 @@
         </div>
     </header>
     <div class="dummy-header"></div>
-    <script src="js/hamburger.js"></script>
+    <script src="/ECsite_gbf/js/hamburger.js"></script>

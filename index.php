@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set("Asia/Tokyo");
+session_start();
 
 $pdo = null;
 $error_message = array();

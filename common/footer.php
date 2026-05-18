@@ -1,10 +1,10 @@
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/ECsite_gbf/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <footer>
         <div class="main-footer">
             <div class="main-rogo">
-                <img src="images/logo_white.svg" alt="">
+                <img src="/ECsite_gbf/images/logo_white.svg" alt="">
                 <div class="sns">
                     <p>公式SNS</p>
                     <div class="sns-link">

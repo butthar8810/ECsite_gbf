@@ -38,12 +38,12 @@ header{
     align-items: center;
 }
 
-.main-header a img{
+.main-header-logo-image{
     width: 150px;
     height: auto;
     transition: all .5s;
 }
-.main-header a:hover img{
+.main-header-logo-image:hover{
     filter: invert(40%);
 }
 
@@ -77,6 +77,10 @@ header{
     font-size: 10px;
 
 }
+.header-link-list a:hover{
+    color: #9c9999;
+}
+
 /*************************************************************/
 /* hamburgerメニュー 
 /*************************************************************/
@@ -149,8 +153,9 @@ header{
     opacity: 1;
 }
 
-
-/* スライドメニュー */
+/*************************************************************/
+/* スライドメニュー 
+/*************************************************************/
 .slide-menu {
     position: fixed;
     top: 0;
@@ -184,15 +189,21 @@ header{
     z-index: -1;
 }
 
+/*************************************************************/
+/* slide-menu-form 
+/*************************************************************/
 .slide-menu-form{
     width: 100%;
-    padding: 15px 5vw;
+    padding: 15px clamp(0px, 5vw, 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/*************************************************************/
+/* slide-menu-title 
+/*************************************************************/
 .slide-menu-title{
     width: 100%;
     
@@ -213,6 +224,63 @@ header{
 .slide-menu-title p{
     font-size: clamp(8px, 1.2vw, 12px);
 }
+/*************************************************************/
+/* slide-menu-mypage 
+/*************************************************************/
+.slide-menu-mypage{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 15px;
+}
+.slide-menu-mypage .username-text{
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+}
+.slide-menu-mypage .username-text span{
+    font-size: 12px;
+}
+
+.slide-menu-mypage .link-list{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slide-menu-mypage .link-list a{
+    font-size:  clamp(8px, 1.2vw, 12px);
+    color: #1a1311;
+    text-decoration: none;
+    border: 2px solid #D0D0D0;
+    background-color: white;
+    padding: 0.8rem;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-menu-mypage .link-list a img{
+    width: 20px;
+    margin-right: 5px;
+}
+/*************************************************************/
+/* slide-menu-login 
+/*************************************************************/
+.slide-menu-login .login{
+    color: #fff;
+    background-color: #1a1311;
+}
+.slide-menu-login .new{
+    color: #1a1311;
+    border: 1px solid #1a1311;
+}
+
+
 .slide-menu-login{
     width: 100%;
     margin-top: 20px;
@@ -241,13 +309,13 @@ header{
     color: #1a1311;
     border: 1px solid #1a1311;
 }
-.header-link-list a:hover{
-    color: #9c9999;
-}
 
+/*************************************************************/
+/* slide-menu-list 
+/*************************************************************/
 .slide-menu-list{
     width: 100%;
-    margin-top: 3vw;
+    margin-top: clamp(0px, 3vw, 30px);
 }
 .slide-menu-list h3{
     font-size: clamp(8px, 1.2vw, 12px);
@@ -292,6 +360,50 @@ header{
 }
 .slide-menu-list li:hover a{
     color: #9c9999;
+}
+
+/*************************************************************/
+/* slide-menu-title-list
+/*************************************************************/
+.slide-menu-title-list{
+    width: 100%;
+    margin-top: 3vw;
+
+}
+.slide-menu-title-list h3{
+    font-size: clamp(8px, 1.2vw, 12px);
+    font-weight: 400;
+    line-height: 3vw;
+    width: 100%;
+
+}
+.slide-menu-title-list .line{
+    color: #e5e5e5;
+    width: 100%;
+}
+
+.slide-menu-title-list .menu-title-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.slide-menu-title-list .menu-title-list a{
+    width: clamp(61px, 23%, 100px);
+    height: clamp(61px, 23%, 100px);
+    margin: 3px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #e5e5e5;
+}
+
+.slide-menu-title-list .menu-title-list a img{
+    width: 100%;
+    height: 100%;
+}
+.slide-menu-title-list .menu-title-list a img:hover{
+    background-color: #fbfbfb;
 }
 /*************************************************************/
 /* sub-header
