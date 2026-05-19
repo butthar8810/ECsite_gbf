@@ -84,6 +84,28 @@
                                     <a href="#"><img src="/ECsite_gbf/images/ip-pictures_v2.webp" alt=""></a>
                                 </div>
                             </div>
+                            <div class="slide-menu-info">
+                                <div class="slide-menu-info-support">
+                                    <h3>お知らせ・サポート</h3>
+                                    <hr class="line">
+                                    <ul class="menu-list">
+                                        <li><a href="#">お知らせ</a></li>
+                                        <li><a href="#">ご利用ガイド</a></li>
+                                        <li><a href="#">よくある質問</a></li>
+                                        <li><a href="#">お問い合わせ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="slide-menu-info-support">
+                                    <h3>その他</h3>
+                                    <hr class="line">
+                                    <ul class="menu-list">
+                                        <li><a href="#">利用規約</a></li>
+                                        <li><a href="#">特定商取引法に基づく表示</a></li>
+                                        <li><a href="#">プライバシーポリシー</a></li>
+                                        <li><a href="#">Cookie 設定</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </nav>
                     <div class="slide-menu-mask"></div>

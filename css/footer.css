@@ -23,6 +23,9 @@ footer{
     padding: 40px;
     
 }
+/*************************************************************/
+/* main-rogo
+/*************************************************************/
 .main-rogo{
     height: 40px;
 
@@ -71,23 +74,130 @@ footer{
     font-weight: 200;
     margin: 0 3px;
 }
+/*************************************************************/
+/* footer-link
+/*************************************************************/
+.footer-link{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-.footer-line{
-    color: white;
 }
 .footer-link-title{
     color: white;
-
+    width: 360px;
+    margin-bottom: 30px;
+}
+.footer-link-title h2{
+    font-size: 20px;
 }
 .footer-link-title h2 span{
 
-    font-size: clamp(10px, 1.4vw, 20px);
+    font-size: 10px;
 }
+.footer-line{
+    color: white;
+}
+
+.footer-link-title-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link-title-list li{
+    width: 50%;
+    display: block;
+}
+.footer-link-title-list li::before{
+    content: "\f105";
+    font: var(--fa-font-solid);
+    font-size: 10px;
+    padding-right: 5px;
+
+}
+.footer-link-title-list li a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+
 .footer-link-category{
     color: white;
+    width: 870px;
+    margin-bottom: 20px;
 
+}
+.footer-link-category h2{
+
+    font-size: 20px;
 }
 .footer-link-category h2 span{
 
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: 10px;
+}
+.footer-link-category-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link-category-list li{
+    width: 25%;
+    display: block;
+}
+.footer-link-category-list li::before{
+    content: "\f105";
+    font: var(--fa-font-solid);
+    font-size: 10px;
+    padding-right: 5px;
+
+}
+.footer-link-category-list li a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+
+/*************************************************************/
+/* footer-navigation
+/*************************************************************/
+.footer-navigation{
+    display: flex;
+    margin: 20px 0;
+}
+.service-nav{
+    width: 200px;
+}
+.support-nav{
+    width: 200px;
+
+}
+.other-nav{
+    width: 200px;
+
+}
+
+.footer-navigation h3{
+    color: white;
+    font-size: 12px;
+}
+.footer-navigation-list{
+    list-style: none;
+}
+.footer-navigation-list li{
+
+}
+.footer-navigation-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+/*************************************************************/
+/* copylight
+/*************************************************************/
+.copylight{
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    text-align: right;
 }

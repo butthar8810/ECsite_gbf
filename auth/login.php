@@ -45,13 +45,33 @@
                             <p>パスワード</p>
                             <input type="password" name="pass" required>
                         </div>
-
-                        
+                        <div class="remember-mail">
+                            <input type="checkbox" name="remember" value="mail">
+                            <span class="remember-mail-text">メールアドレスを記憶する</span>
+                        </div>
                         <input class="login-btn" type="submit" value="ログインする">
+                        <div >
+
+                        </div>
                     </form>
                 </div>
-                <div class="login-form">
 
+                <div class="signup-form">
+                    <h1 class="title">まだ会員ではない方はこちら</h1>
+                    <hr class="line">
+                    <p class="detail">
+                        会員登録がお済みで無い方は、こちらから登録をお願いいたします。
+                    </p>
+                    <div class="signup-btn">
+                        <a href="/ECsite_gbf/auth/signup.php">新規会員登録</a>
+                    </div>
+                    <h1 class="title">ソーシャルアカウントでログイン</h1>
+                    <hr class="line">
+                    
+                    <div class="line-login-btn">
+                        <a href="/ECsite_gbf/auth/signup.php">LINEでログイン</a>
+                    </div>
+                    <p class="line-login-text">※LINE連携時に友だち追加します</p>
                 </div>
             </div>
 

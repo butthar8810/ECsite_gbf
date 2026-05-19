@@ -388,11 +388,12 @@ header{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 .slide-menu-title-list .menu-title-list a{
-    width: clamp(61px, 23%, 100px);
-    height: clamp(61px, 23%, 100px);
-    margin: 3px;
+    width: clamp(61px, 8vw, 100px);
+    height: clamp(61px, 8vw, 100px);
+    margin: 1%;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     background-color: #e5e5e5;
@@ -405,6 +406,69 @@ header{
 .slide-menu-title-list .menu-title-list a img:hover{
     background-color: #fbfbfb;
 }
+
+/*************************************************************/
+/* slide-menu-info
+/*************************************************************/
+
+.slide-menu-info{
+    width: 100%;
+    margin-top: clamp(0px, 3vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide-menu-info-support{
+    width: 50%;
+    margin: 0 5px;
+}
+.slide-menu-info-support h3{
+    font-size: clamp(8px, 1.2vw, 12px);
+    font-weight: 400;
+    line-height: 3vw;
+    width: 100%;
+}
+.slide-menu-info-support .line{
+    color: #e5e5e5;
+    width: 100%;
+}
+.slide-menu-info-support .menu-list{
+    list-style: none;
+}
+.slide-menu-info-support .menu-list li{
+    width: 100%;
+    height: clamp(32px, 5vw, 50px);
+    padding-left: 10px;
+    border-bottom: 1px solid #efefef;
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slide-menu-info-support .menu-list li::after{
+    content: "\f105";
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slide-menu-info-support .menu-list li a{
+    font-size:  clamp(8px, 1.2vw, 12px);
+    font-weight: 300;
+    color: #1a1311;
+    line-height: 30px;
+    text-decoration: none;
+    width: 100%;
+
+    position: relative;
+}
+.slide-menu-info-support li:hover a{
+    color: #9c9999;
+}
+
 /*************************************************************/
 /* sub-header
 /*************************************************************/
