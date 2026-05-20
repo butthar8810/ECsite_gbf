@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const hamburger = document.querySelector('.hamburger-menu');
+    const headerHamburger = document.querySelector('.header-hamburger-menu');
+    const footerHamburger = document.querySelector('.footer-hamburger-menu');
     const slideMenu = document.querySelector('.slide-menu');
     const slideMenuMask = document.querySelector('.slide-menu-mask');
 
@@ -10,12 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const subMenu_c = document.querySelector('.sub-menu-categor');
     const dropMenuMask = document.querySelector('.drop-menu-mask');
 
-    hamburger.addEventListener('click', function() {
+    headerHamburger.addEventListener('click', function() {
         this.classList.toggle('active');
+        footerHamburger.classList.toggle('active');
         slideMenu.classList.toggle('active');
         slideMenuMask.classList.toggle('active');
     });
-
+    footerHamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        headerHamburger.classList.toggle('active');
+        slideMenu.classList.toggle('active');
+        slideMenuMask.classList.toggle('active');
+    });
     menuTub_t.addEventListener("mouseover", function() {
         menuTub_c.classList.remove('active');
         subMenu_c.classList.remove('active');
@@ -36,8 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // メニュー外クリックで閉じる
     document.addEventListener('click', function(e) {
         // hamburger, slideMenu以外の要素をクリックしたら
-        if (!hamburger.contains(e.target) && !slideMenu.contains(e.target)) {
-            hamburger.classList.remove('active');
+        if (!headerHamburger.contains(e.target) && !footerHamburger.contains(e.target) && !slideMenu.contains(e.target)) {
+            headerHamburger.classList.remove('active');
+            footerHamburger.classList.remove('active');
             slideMenu.classList.remove('active');
             slideMenuMask.classList.remove('active');
         }
