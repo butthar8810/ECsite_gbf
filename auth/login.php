@@ -10,7 +10,7 @@
     
     <link href=" https://cdn.jsdelivr.net/npm/swiper@12.1.4/swiper-bundle.min.css " rel="stylesheet">
     
-    <title>Document</title>
+    <title>ログインページ</title>
 </head>
 <body>
     <?php include('../common/header.php'); ?>
@@ -50,9 +50,6 @@
                             <span class="remember-mail-text">メールアドレスを記憶する</span>
                         </div>
                         <input class="login-btn" type="submit" value="ログインする">
-                        <div >
-
-                        </div>
                     </form>
                 </div>
 
@@ -74,16 +71,8 @@
                     <p class="line-login-text">※LINE連携時に友だち追加します</p>
                 </div>
             </div>
-
-
-
-
-
         </div>
-
     </div>
-    
-    
     
     <?php include('../common/footer.php'); ?>
 </body>

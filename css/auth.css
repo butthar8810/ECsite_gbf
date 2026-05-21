@@ -1,6 +1,18 @@
 .login-main{
     width: clamp(0px, 90%, 1000px);
     padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register-main{
+    width: clamp(0px, 90%, 1000px);
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*************************************************************/
 /* page-root-form
@@ -211,3 +223,186 @@
     font-size: clamp(6px, 1.0vw, 10px);
     color: #868380;
 }
+
+/*************************************************************/
+/* login-main-title
+/*************************************************************/
+.register-main-title{
+    width: 100%;
+    margin-top: 80px;
+}
+.register-main-text{
+    width: 100%;
+    color: #1a1311;
+    font-size: clamp(10px, 1.2vw, 14px);
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+/*************************************************************/
+/* login-form
+/*************************************************************/
+.register-form{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.register-form .register-title{
+    background-color: #fafafa;
+    padding: 0 20px;
+}
+.register-form .register-title .title{
+    width: 100%;
+    font-size: clamp(10px, 1.4vw, 16px);
+    text-align: left;
+    padding: 10px 0;
+}
+.register-detail{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register-consent-form{
+    padding-top: 30px;
+    width: 75%;
+}
+.register-consent-form p{
+    color: #1a1311;
+    font-size: clamp(10px, 1.2vw, 14px);
+}
+.terms-of-service{
+    width: 100%;
+    background: #f5f5f5;
+    padding: 30px 0;
+    margin-top: 30px;
+
+}
+.inline_box {
+    width: 100%;
+    font-size: clamp(10px, 1.2vw, 14px);
+    height: 180px;
+    overflow: auto;
+    background: #f5f5f5;
+    border: none;
+    padding: 20px;
+}
+.consent-checkbox{
+    width: 100%;
+    font-size: clamp(10px, 1.2vw, 14px);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consent-checkbox .consent{
+    margin: 0 10px;
+}
+.register-input-form{
+    width: 75%;
+}
+.register-input-form .name-input-form{
+    width: 100%;
+    margin: 10px 0;
+}
+.register-input-form .name-input-form p{
+    width: 100%;
+    font-size: clamp(12px, 1.4vw, 16px);
+    font-weight: 500;
+    margin: 10px 0;
+}
+.register-input-form .name-input-form input{
+    width: 100%;
+    padding: 5px;
+}
+.register-input-form .mail-input-form{
+    width: 100%;
+    margin: 10px 0;
+}
+.register-input-form .mail-input-form p{
+    width: 100%;
+    font-size: clamp(12px, 1.4vw, 16px);
+    font-weight: 500;
+    margin: 10px 0;
+}
+.register-input-form .mail-input-form input{
+    width: 100%;
+    padding: 5px;
+
+}
+.register-input-form .pass-input-form{
+    width: 100%;
+    margin: 10px 0;
+}
+.register-input-form .pass-input-form p{
+    width: 100%;
+    font-size: clamp(12px, 1.4vw, 16px);
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+.register-input-form .pass-input-form input{
+    width: 100%;
+    padding: 5px;
+}
+
+.input-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+.register-input-form .toppage-btn{
+    width: 30%;
+    color: #1a1311;
+    font-weight: 900;
+    font-size: clamp(12px, 1.4vw, 16px);
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #1a1311;
+    border-radius: 5px;
+    margin: 0 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+
+    transition: all 0.3s ease-in-out;
+}
+.register-input-form .toppage-btn:hover{
+    color: white;
+    background-color: #1a1311;
+}
+.register-input-form .register-btn{
+    width: 30%;
+    color: white;
+    font-weight: 900;
+    font-size: clamp(12px, 1.4vw, 16px);
+    background-color: #a3a1a0;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin: 0 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+
+    transition: all 0.3s ease-in-out;
+}
+.register-input-form .register-btn.active{
+    background-color: #1a1311;
+
+}
+.register-input-form .register-btn.active:hover{
+    color: #1a1311;
+    background-color: white;
+}
+
