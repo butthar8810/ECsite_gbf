@@ -14,7 +14,7 @@
                         <span>詳細検索</span>
                     </a>
                     <?php if (isset($_SESSION['id'])) : ?>
-                        <a class="header-link-btn" href="/ECsite_gbf/">
+                        <a class="header-link-btn" href="/ECsite_gbf/mypage/mypage.php">
                             <img src="/ECsite_gbf/images/icon_account_wht.svg" alt="">
                             <span>マイページ</span>
                         </a>
@@ -108,7 +108,7 @@
                     <span>詳細検索</span>
                 </a>
                 <?php if (isset($_SESSION['id'])) : ?>
-                    <a class="footer-link-btn" href="/ECsite_gbf/">
+                    <a class="footer-link-btn" href="/ECsite_gbf/mypage/mypage.php">
                         <img src="/ECsite_gbf/images/icon_account_blk.svg" alt="">
                         <span>マイページ</span>
                     </a>
@@ -144,7 +144,7 @@
 			            <div class="slide-menu-mypage">
 			                <p class="username-text"><?php echo $_SESSION['username'] ?><span>様</span></p>
 			                <div class="link-list">
-			                    <a class="mypage" href="#"><img src="/ECsite_gbf/images/icon_account_blk.svg" alt="">マイページ</a>
+			                    <a class="mypage" href="/ECsite_gbf/mypage/mypage.php"><img src="/ECsite_gbf/images/icon_account_blk.svg" alt="">マイページ</a>
 			                    <a class="favorite" href="#"><img src="/ECsite_gbf/images/icon_favorite_blk.svg" alt="">お気に入り</a>
 			                    <a class="logout" href="/ECsite_gbf/auth/logout.php"><img src="/ECsite_gbf/images/icon_logout_menu_blk.svg" alt="">ログアウト</a>
 			                </div>

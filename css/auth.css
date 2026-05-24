@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .register-main{
     width: clamp(0px, 90%, 1000px);
@@ -12,27 +11,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-/*************************************************************/
-/* page-root-form
-/*************************************************************/
-.page-root-form{
-    margin: 20px 0;
-}
-.page-root-form .page-root{
-    font-size: 12px;
-    color: #1a1311;
-}
-.page-root-form .page-root a{
-    color: #676767;
-}
+
 /*************************************************************/
 /* login-main-title
 /*************************************************************/
 .login-main-title{
     width: 100%;
-    margin-top: 80px;
 }
 /*************************************************************/
 /* login-forms
@@ -225,7 +210,7 @@
 }
 
 /*************************************************************/
-/* login-main-title
+/* register-main-title
 /*************************************************************/
 .register-main-title{
     width: 100%;
@@ -241,7 +226,7 @@
 }
 
 /*************************************************************/
-/* login-form
+/* register-form
 /*************************************************************/
 .register-form{
     width: 100%;
